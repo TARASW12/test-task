@@ -8,9 +8,9 @@ export const MenuProvider = ({ children }) => {
     const [searchList, setSerchList] = useState([])
     const [photos, setPhotos] = useState([])
     const setter = (photo) => setPhotos(photo)
-
+    const [loading , setLoading] = useState(false)
     return (
-        <MenuContext.Provider value={{ searchList, photos, setter, setSerchList }}>
+        <MenuContext.Provider value={{ searchList, photos, setter, setSerchList, setLoading, loading }}>
             {children}
         </MenuContext.Provider>
     )

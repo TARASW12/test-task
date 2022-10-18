@@ -1,0 +1,40 @@
+.loader{
+    width: 70px ;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px dashed rgb(0, 0, 0);
+    animation: rotate 2s linear  infinite;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+/* .loader2{
+    width: 80px ;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px dashed rgb(213, 18, 18);
+    animation: rotates 4s linear  infinite;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+} */
+
+@keyframes rotate{
+from{
+transform: rotate(0deg) scale(1);
+}
+to{
+transform: rotate(360deg) scale(1.5);
+}
+}
+
+
+@keyframes rotates{
+    from{
+    transform: rotate(360deg) scale(1);
+    }
+    to{
+    transform: rotate(0deg) scale(1.5);
+    }
+    }
